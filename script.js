@@ -20,7 +20,7 @@ function categorynews(button){
 
 
    
-if ((window.location.pathname === "/news-hub/index.html") || (window.location.pathname === "/news-hub/")) {
+if ((window.location.pathname === "https://news-hub-website.netlify.app/")) {
     // The current page is index.html
     let query = "india";
     fetchNews(query);
