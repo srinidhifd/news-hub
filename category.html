@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon_io/favicon-32x32.png" type="image/x-icon">
+    <style>
+        #latest-news{
+     display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+    <!-- header starts -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="assets/logo.png" alt="logo" class="logo-img" ></a>
+            </div>
+            <!-- navigation bar starts -->
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="category.html">Categories</a><li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header ends -->
+
+    <main>
+        <div class="category-container">
+            <h2 id="category-heading">Categories</h2> 
+            <h2 id="cat-heading"> </h2>
+            <button style="color: white;margin-left: 90%;">
+                <a href="./category.html">Go Back</a>
+            </button>
+            <div id="latest-news" >
+
+            </div>
+            <div id="cat-container">
+
+                <div class="cat-card">
+                    <h2>Political News</h2>
+                    <img src="./assets/political.jpeg" alt="politics">
+                    <button onclick="categorynews(this)" data-name="politics">Click to view</button>
+                </div>
+                <div class="cat-card">
+                    <h2>Sports News</h2>
+                    <img src="./assets/sports.jpg" alt="sports">
+                    <button onclick="categorynews(this)" data-name="sports">Click to view</button>
+
+                </div>
+                <div class="cat-card">
+                    <h2>Entertainment News</h2>
+                    <img src="./assets/entertainment.jpg" alt="entertainment">
+                    <button onclick="categorynews(this)" data-name="entertainment">Click to view</button>
+
+                </div>
+                <div class="cat-card">
+                    <h2>Astrology News</h2>
+                    <img src="./assets/astrology.jpg" alt="astrology">
+                    <button onclick="categorynews(this)" data-name="astrology">Click to view</button>
+
+                </div>
+                <div class="cat-card">
+                    <h2>Business News</h2>
+                    <img src="./assets/business.jpg" alt="business">
+                    <button onclick="categorynews(this)" data-name="business">Click to view</button>
+
+                </div>
+                <div class="cat-card">
+                    <h2>Education News</h2>
+                    <img src="./assets/education.jpg" alt="Education">
+                    <button onclick="categorynews(this)" data-name="education">Click to view</button>
+
+                </div>
+            </div>
+            </div>
+    </main>
+
+    <footer>
+        <p>
+            All rights reserved by &copy; News-Hub 2023
+        </p>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
