@@ -2,7 +2,7 @@ const API_KEY="75a7e7152bc244d0a4f48ce077e4291d";
 
 const url= "https://newsapi.org/v2/everything?q=";
 
-
+console.log(window.location.pathname);
 
 
 
@@ -22,7 +22,7 @@ function categorynews(button){
    
 if ((window.location.pathname === "/" || window.location.pathname === "/index.html" )) {
     // The current page is index.html
-    console.log(window.location.pathname);
+    
     let query = "india";
     fetchNews(query);
   } else {
