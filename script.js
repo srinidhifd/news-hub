@@ -22,6 +22,7 @@ function categorynews(button){
    
 if ((window.location.pathname === "/" || window.location.pathname === "/index.html" )) {
     // The current page is index.html
+    console.log(window.location.pathname);
     let query = "india";
     fetchNews(query);
   } else {
