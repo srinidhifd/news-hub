@@ -1,7 +1,6 @@
-const API_KEY="75a7e7152bc244d0a4f48ce077e4291d";
+const API_KEY="6c76d56debde438aa7d14c67e1fc19a3";
 
 const url= "https://newsapi.org/v2/everything?q=";
-
 
 
 
@@ -20,9 +19,15 @@ function categorynews(button){
 
 
    
+<<<<<<< HEAD
 if ((window.location.pathname === "/news-hub/" || window.location.pathname === "/news-hub/index.html")) {
     // The current page is index.html
 
+=======
+if ((window.location.pathname === "/" )) {
+    // The current page is index.html
+    
+>>>>>>> 58bae17465a81699b03513cdd0179bbb52bd1261
     let query = "india";
     fetchNews(query);
   } else {
